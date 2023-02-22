@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD PROJECT</title>
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2> crud</h2>
+            <p>PRODUCT MANAGEMENT SYSTEM</p>
+        </div>
+        <div class="input">
+            <input type="text" name="title" id="title" placeholder="title">
+            <div class="price">
+                <input onkeyup="gettotal()" type="number" name="price" id="price" placeholder="price">
+                <input onkeyup="gettotal()" type="number" name="taxes" id="taxes" placeholder="taxes">
+                <input onkeyup="gettotal()" type="number" name="ads" id="ads" placeholder="ads">
+                <input onkeyup="gettotal()" type="number" name="discount" id="discount" placeholder="discount">
+                <small id="total">***</small>
+            </div>
+            <input type="number" name="count" id="count" placeholder="count">
+            <input type="text" name="category" id="category" placeholder="category">
+            <button id="submit">Create</button>
+        </div>
+        <div class="output">
+            <div class="search-bar">
+                <input type="text" placeholder="search" id="search">
+                <div class="btnSearch">
+                    <button id="searchTitle"> Search By Title</button>
+                    <button id="searchCategory"> Search By Category</button>
+                </div>
+            </div>
+            <Table>
+                <tr> 
+                    <td>id</td>
+                    <td>title</td>
+                    <td>price</td>
+                    <td>taxes</td>
+                    <td>ads</td>
+                    <td>discount</td>
+                    <td>total</td>
+                    <td>category</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                </tr>  
+            </Table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
